@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marccelo Luis Lopes dos Santos Castillo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1 id="meu_nome">Marccelo Luis Lopes dos Santos Castillo</h1>
+</header>
+
+<nav>
+  <button class="tablinks" onclick="openTab(event, 'sobre')">Sobre mim</button>
+  <button class="tablinks" onclick="openTab(event, 'formacao')">Formação educacional</button>
+  <button class="tablinks" onclick="openTab(event, 'idiomas')">Idiomas</button>
+  <button class="tablinks" onclick="openTab(event, 'portfolio')">Portfólio</button>
+  <button class="tablinks" onclick="openTab(event, 'contato')">Contato</button>
+</nav>
+
+<section id="sobre" class="tabcontent">
+  <h2>Sobre mim</h2>
+  <p>Me chamo <span>Marccelo Luis Lopes dos Santos Castillo</span>, nasci no Chile e morei até meus 8 anos de idade, após isso vim para o Brasil junto com minha mãe.<br>
+    <br>Moramos no centro de São Paulo desde então. Atualmente, tenho 26 anos e trabalho como suporte de dispositivos mobile Android & iOS.<br>
+    <br>Nas horas vagas, gosto de fotografar, treinar Muay Thai, jogar videogame e andar de bicicleta.</p>
+</section>
+
+<section id="sobre" class="tabcontent">
+  <h2>Sobre mim</h2>
+  <p>Me chamo <span>Marccelo Luis Lopes dos Santos Castillo</span>, nasci no Chile e morei até meus 8 anos de idade, após isso vim para o Brasil junto com minha mãe.<br>
+    <br>Moramos no centro de São Paulo desde então. Atualmente, tenho 26 anos e trabalho como suporte de dispositivos mobile Android & iOS.<br>
+    <br>Nas horas vagas, gosto de fotografar, treinar Muay Thai, jogar videogame e andar de bicicleta.</p>
+</section>
+
+<section id="formacao" class="tabcontent">
+  <h2>Formação educacional</h2>
+  <p> 🎓 Gastronomia Produção <br>
+    <br>🎓 Fonográfica (Música Eletrônica) <br>
+    <br> 📝 Análise e desenvolvimento de sistemas <br>
+  </p>
+</section>
+
+<section id="idiomas" class="tabcontent">
+  <h2>Idiomas</h2>
+  <div class="idioma">
+    <p>Espanhol</p>
+    <div class="barra">
+      <div class="nivel" style="width: 100%;"></div>
+      <div class="nivel-secundario" style="width: 100%;"></div>
+      <span>100%</span>
+    </div>
+  </div>
+  <div class="idioma">
+    <p>Português</p>
+    <div class="barra">
+      <div class="nivel" style="width: 80%;"></div>
+      <div class="nivel-secundario" style="width: 100%;"></div>
+      <span>100%</span>
+    </div>
+  </div>
+  <div class="idioma">
+    <p>Inglês</p>
+    <div class="barra">
+      <div class="nivel" style="width: 100%;"></div>
+      <div class="nivel-secundario" style="width: 80%;"></div>
+      <span>80%</span>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="portfolio" class="tabcontent">
+    <h2>Portfólio</h2>
+    <p>Aqui você pode encontrar alguns exemplos de trabalhos que desenvolvi:</p>
+    <ul>
+      <li><a href="https://marccelocastillo.wixsite.com/my-site">Portfólio de fotografia</a></li>
+      <li><a href="https://www.linkedin.com/in/marccelocastillo/">Linkedin</a></li>
+    </ul>
+</section>
+
+<section id="contato" class="tabcontent">
+  <h2>Contato</h2>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+    <input type="submit" value="Enviar">
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

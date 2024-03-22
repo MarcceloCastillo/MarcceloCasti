@@ -1,0 +1,181 @@
+/* Define a fonte padrão e outras propriedades para o corpo do documento */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove preenchimento */
+  background-color: #FFD6C2; /* Define a cor de fundo como branco */
+}
+
+/* Estilo para a imagem na seção "Sobre mim" */
+#sobre img {
+  max-width: 20%; /* Reduz o tamanho máximo da imagem para 20% do tamanho original */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 10px; /* Adiciona uma margem à direita da imagem */
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #801336; /* Define a cor de fundo do cabeçalho */
+  color: #FFA46F; /* Define a cor do texto no cabeçalho como branco */
+  text-align: center; /* Centraliza o texto no cabeçalho */
+  padding: 20px 0; /* Adiciona preenchimento ao cabeçalho */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+/* Estilos para o cabeçalho quando o mouse passa por cima */
+header:hover {
+  background-color: #801340; /* Define a cor de fundo do cabeçalho quando o mouse passa por cima */
+}
+
+/* Estilos para a navegação */
+nav {
+  text-align: center; /* Centraliza o texto na navegação */
+  margin-top: 20px; /* Adiciona margem superior para separar do conteúdo acima */
+}
+
+
+/* Estilos para os botões da aba */
+.tablinks {
+  background-color: #F8B595; /* Define a cor de fundo dos botões da aba */
+  color: #333; /* Define a cor do texto dos botões da aba */
+  padding: 10px 20px; /* Adiciona preenchimento aos botões da aba */
+  border: none; /* Remove a borda dos botões da aba */
+  border-radius: 5px; /* Adiciona bordas arredondadas aos botões da aba */
+  margin: 0 10px; /* Adiciona margem entre os botões da aba */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor de fundo */
+  
+}
+
+/* Estilo para o botão ativo */
+.tablinks.active {
+  background-color: #FF7F50; /* Cor de fundo do botão ativo */
+  color: white; /* Cor do texto do botão ativo */
+}
+
+/* Estilos para o conteúdo da aba */
+.tabcontent {
+  display: none; /* Esconde o conteúdo da aba por padrão */
+  padding: 20px; /* Adiciona preenchimento ao conteúdo da aba */
+}
+
+/* Estilos para os títulos de seção */
+h2 {
+  color: #333; /* Define a cor do texto dos títulos de seção */
+}
+
+/* Estilos para o conteúdo da aba */
+.tabcontent {
+  text-align: center; /* Centraliza o conteúdo da aba */
+}
+
+/* Estilos para os títulos de seção dentro do conteúdo da aba */
+.tabcontent h2 {
+  text-align: center; /* Centraliza os títulos de seção dentro do conteúdo da aba */
+}
+
+/* Estilos para os parágrafos dentro do conteúdo da aba */
+.tabcontent p {
+  display: inline-block; /* Define a exibição como bloco em linha */
+  text-align: left; /* Alinha o texto à esquerda */
+  max-width: 600px; /* Define a largura máxima do parágrafo para evitar que se espalhe muito */
+  margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+}
+
+/* Estilos para as listas não ordenadas dentro do conteúdo da aba */
+.tabcontent ul {
+  list-style-type: none; /* Remove os marcadores de lista padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilos para os itens de lista dentro do conteúdo da aba */
+.tabcontent ul li {
+  display: inline; /* Exibe os itens de lista em linha */
+  margin: 0 10px; /* Adiciona margem entre os itens de lista */
+}
+
+/* Estilos de transição bidirecional */
+.tabcontent {
+  opacity: 0; /* Define a opacidade inicial como 0 */
+  transition: opacity 0.2s ease-in-out; /* Adiciona uma transição suave para a mudança de opacidade */
+}
+
+/* Estilos para o conteúdo da aba ativo */
+.tabcontent.active {
+  display: block; /* Exibe o conteúdo da aba */
+  opacity: 1; /* Define a opacidade como 1 para torná-lo visível */
+}
+
+/* Estilos para a imagem flutuante quando o mouse passa sobre o nome na seção "Sobre mim" */
+#myName:hover + #imagemHover img {
+  display: block; /* Exibe a imagem quando o mouse passa sobre o nome */
+  }
+
+/* Estilos para o efeito de hover na seção "Sobre mim" */
+#sobre p {
+  position: relative; /* Define a posição como relativa para que a imagem seja posicionada em relação a este elemento */
+}
+
+#sobre p span {
+  color: #C06C84; /* Cor escura para o nome destacado */
+  font-weight: bold; /* Deixando o nome em negrito */
+  text-decoration: underline; /* Adicionando sublinhado */
+  cursor: pointer; /* Mudando o cursor para indicar que é clicável */
+}
+
+/* Estilos para a imagem de perfil quando o mouse passa sobre o nome na seção "Sobre mim" */
+#sobre p span:hover::after {
+  content: url(MarcceloFoto.jpeg); /* Define o conteúdo como a imagem de perfil */
+  position: absolute; /* Define a posição absoluta para que a imagem seja posicionada independentemente do fluxo do documento */
+  top: 10%; /* Define a distância do topo */
+  right: 115%; /* Define a distância da direita */
+  z-index: 9999; /* Define a ordem de empilhamento */
+  width: 500px; /* Define a largura da imagem */
+  height: 500px; /* Define a altura da imagem */
+  border-radius: 75%; /* Define o raio da borda para criar uma aparência arredondada */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra à imagem */
+  background-position: right center; /* Centraliza verticalmente a posição de fundo da imagem e alinha à direita horizontalmente */
+  overflow: hidden; /* Define o comportamento de */  
+}
+
+/* Estilo para o contêiner de idioma */
+.idioma {
+  margin-bottom: 35px; /* Espaçamento inferior entre os idiomas */
+}
+
+/* Estilo para a barra de progresso */
+.barra {
+  width: 50%; /* Largura máxima da barra de progresso */
+  height: 20px; /* Altura da barra de progresso */
+  background-color: #FF4057; /* Cor de fundo da barra de progresso */
+  border-radius: 5px; /* Borda arredondada */
+  margin: 0 auto; /* Centraliza a barra horizontalmente */
+  position: relative; /* Define a posição relativa para os elementos filhos */
+}
+
+.barra span {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #242424;
+}
+
+
+/* Estilo para o nível principal da barra de progresso */
+.nivel {
+  height: 100%; /* Altura igual à altura da barra de progresso */
+  background-color: #FF4057; /* Cor do nível principal da barra de progresso */
+  border-radius: 5px; /* Borda arredondada */
+}
+
+/* Estilo para o nível secundário da barra de progresso */
+.nivel-secundario {
+  height: 80%; /* Altura do nível secundário */
+  width: 100%; /* Largura igual à largura da barra de progresso */
+  background-color: #FFA07A; /* Cor do nível secundário da barra de progresso */
+  border-radius: 5px; /* Borda arredondada */
+  position: absolute; /* Define a posição absoluta */
+  bottom: 10%; /* Alinha o nível secundário à parte inferior */
+  left: 0; /* Alinha o nível secundário à esquerda */
+}
